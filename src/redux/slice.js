@@ -11,15 +11,18 @@ const counterSlice = createSlice({
             state.value += 1
         },
         plus: (state,action) => {
-            const data =  state.value + action
-            state.value = data
+            state.value += action.payload
         },
-        // addUser: (v,action) => {
-        //     id: nanoid()
-        //     name: action.name
-        // },
+        addUser: (v,action) => {
+            const data = {
+                id: nanoid(),
+                name: action.payload
+            }
+            v.users.push(data)
+            // console.log(data)
+        },
     }
 })
 
-export const { increment,plus } = counterSlice.actions;
+export const { increment,plus,addUser } = counterSlice.actions;
 export default counterSlice.reducer;
