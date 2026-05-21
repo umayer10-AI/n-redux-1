@@ -11,8 +11,8 @@ const DisplayUser = () => {
             <h2 className='mt-5'>User List: </h2>
             <div>
                 {
-                    data?.map((v,i) => (
-                        <h2 key={i}>{v}</h2>
+                    data?.map(v => (
+                        <h2 key={v.id}>{v.name}</h2>
                     ))
                 }
             </div>
