@@ -5,7 +5,7 @@ const AddUser = () => {
         <div>
             <h2>USer List:</h2>
             <input type="text" placeholder='Add user' className='border' />
-            <button>Add</button>
+            <button className='py-1 px-4 bg-cyan-700 rounded-2xl m-4'>Add</button>
         </div>
     );
 };
