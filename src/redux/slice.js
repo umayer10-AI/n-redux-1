@@ -14,11 +14,11 @@ const counterSlice = createSlice({
             state.value += action.payload
         },
         addUser: (v,action) => {
-            const data = {
-                id: nanoid(),
-                name: action.payload
-            }
-            v.users.push(data)
+            // const data = {
+            //     id: nanoid(),
+            //     name: action.payload
+            // }
+            v.users.push(action.payload)
         },
     }
 })
