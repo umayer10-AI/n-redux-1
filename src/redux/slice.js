@@ -19,7 +19,6 @@ const counterSlice = createSlice({
                 name: action.payload
             }
             v.users.push(data)
-            // console.log(data)
         },
     }
 })
